@@ -1,0 +1,23 @@
+a#feedback{
+    background: red;
+    color: #fff;
+    position: fixed;
+    top: 33%;
+    left: 0;
+    line-height: 26px;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    display: block;
+    z-index: 100000;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+a#feedback:hover{
+    text-decoration: none;
+    padding-top: 7px;
+}

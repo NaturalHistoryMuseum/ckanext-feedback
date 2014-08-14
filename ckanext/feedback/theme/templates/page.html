@@ -1,0 +1,7 @@
+{% ckan_extends %}
+
+  {% block skip %}
+    {% resource 'feedback/feedback.css' %}
+    <a id="feedback" href="{{ h.url_for('feedback_form') }}">Staff feedback</a>
+    {{ super() }}
+  {% endblock %}
