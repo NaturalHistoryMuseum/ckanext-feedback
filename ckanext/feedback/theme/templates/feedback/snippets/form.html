@@ -1,0 +1,6 @@
+{% extends "contact/snippets/form.html" %}
+
+{% block contact_form_fields %}
+    {{ form.markdown('content', label=_('Your feedback'), id='field-content', value=data.content, error=errors.content, is_required=true) }}
+{% endblock %}
+
