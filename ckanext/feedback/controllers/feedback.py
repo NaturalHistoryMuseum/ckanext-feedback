@@ -106,7 +106,8 @@ class FeedbackController(ContactController):
                     ('Data versioning', 'Version data to allow track changes.', 0),
                     ('Subsets', 'Create datasets based on subsets of other datasets (e.g. KE EMu).', 0),
                     ('R Integration', 'Data portal datasets queryable in R.', 0),
-                    ('Enhanced visualisations', 'Add enhanced data visualisations, including: enhanced statistical; geochemical (TAS); interactive map timeline.', 0),
+                    ('Enhanced visualisations', 'Enhanced data visualisations, including statistical and geochemical (TAS).', 0),
+                    ('Geospatial enhancements', 'Alternative map projections; layers, and interactive map timelines.', 0),
                     ('Metagenomics data', 'Make Museum\'s metagenomics data available via the portal.', 0),
                 ]
 
