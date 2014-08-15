@@ -21,3 +21,60 @@ a#feedback:hover{
     text-decoration: none;
     padding-top: 7px;
 }
+
+#roadmap h4{
+    background: #f2f2f2;
+    padding: 10px 0 10px 5px;
+    font-size: 18px;
+    margin: 5px 0 15px 0;
+    font-weight: normal;
+}
+
+#roadmap table{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#roadmap table tr{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#roadmap table th,
+#roadmap table td{
+    text-align: left;
+    padding: 5px;
+}
+
+#roadmap table th{
+    width: 200px;
+}
+
+#roadmap table td.complete-bar{
+    width: 150px;
+    position: relative;
+}
+
+#roadmap table td.complete-bar p,
+#roadmap table td.complete-bar div{
+    position: absolute;
+    top: 6px;
+}
+
+#roadmap table td.complete-bar p{
+    left: 110px;
+    color: #767676;
+    font-size: 10px;
+}
+
+#roadmap table td.complete-bar div{
+    left: 0;
+    height: 16px;
+    width: 100px;
+    background: #EEEEEE;
+}
+
+#roadmap table td.complete-bar div span{
+    display: block;
+    height: 16px;
+    background: #ADDAAB;
+}

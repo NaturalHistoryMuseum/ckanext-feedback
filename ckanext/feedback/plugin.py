@@ -29,6 +29,10 @@ class FeedbackPlugin(p.SingletonPlugin):
                     controller='ckanext.feedback.controllers.feedback:FeedbackController',
                     action='form')
 
+        map.connect('roadmap', '/roadmap',
+                    controller='ckanext.feedback.controllers.feedback:FeedbackController',
+                    action='roadmap')
+
         return map
 
     ## IAuthFunctions

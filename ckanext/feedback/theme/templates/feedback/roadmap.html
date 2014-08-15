@@ -1,0 +1,47 @@
+{% extends "page.html" %}
+
+{% block breadcrumb_content %}
+    {{ super() }}
+    <li><a href="{{ h.url_for('roadmap') }}">Roadmap</a></li>
+{% endblock %}
+
+{% block pre_primary %}
+
+    <article class="module" id="roadmap">
+        <div class="module-content">
+            <h1 class="page-heading">Development Roadmap</h1>
+
+            {% for release in c.releases %}
+
+                <h4>{{ release.name }} - {{ release.date }}</h4>
+
+                <table>
+
+                    {% for task in release.tasks %}
+
+                        <tr>
+                        <th>
+                            {{ task[0] }}
+                        </th>
+                        <td>
+                            {{ task[1] }}
+                        </td>
+                        <td class="complete-bar">
+                            <div><span style="width: {{ task[2] }}%"></span></div>
+                            <p>{{ task[2] }}%</p>
+                        </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+                </table>
+
+            {% endfor %}
+
+            <p>Further features will be added based on staff feedback. Please <a href="{{ h.url_for('feedback_form') }}">send us your suggestions</a>.</p>
+
+        </div>
+    </article>
+{% endblock %}
+
