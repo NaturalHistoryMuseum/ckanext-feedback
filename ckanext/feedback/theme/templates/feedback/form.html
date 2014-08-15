@@ -27,15 +27,13 @@
 <div class="module module-narrow module-shallow">
   <h2 class="module-heading">
     <i class="icon-info-sign"></i>
-    {{ _('Feedback') }}
+    {{ _('Roadmap') }}
   </h2>
   <div class="module-content">
     <p>
-      What do you think of the data portal? How can we improve it?
+      Have a look what features have been developed, and what we're planning for the future.
     </p>
-    <p>
-      Please let us know, so we can make it as good as possible!
-    </p>
+    <p><a class="read-more" href="{{ h.url_for('roadmap') }}">Roadmap <i class="icon-circle-arrow-right"></i></a></p>
   </div>
 </div>
 {% endblock %}
