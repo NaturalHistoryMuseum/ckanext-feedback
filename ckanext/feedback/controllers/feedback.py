@@ -76,6 +76,10 @@ class FeedbackController(ContactController):
                     ('Data issues', 'Mechanism to flag & resolve data issues (the data corrections should happen at source though - e.g. in KE EMu ).', 100),
                     ('Social share links', 'Users can share datasets over Twitter, Facebook and Google+', 100),
                     ('Site statistics', 'Publish site statistics, including number of datasets, contributors and records..', 100),
+                ],
+                'issues': [
+                    ('KE EMu images', 'KE EMu images are being delivered via the old interfaces, so some images are missing. We will switch to using MAMs when it comes online.'),
+                    ('DOIs', 'Dataset DOIs are currently just placeholders. The Museum needs to sign up for the British Library\'s DataCite service so we can start minting permanent DOIs.')
                 ]
 
             },
@@ -87,12 +91,13 @@ class FeedbackController(ContactController):
                     ('Museum consultation', 'Revise portal & features based on staff feedback.', 0),
                     ('Museum datasets', 'Identify other Museum and staff datasets to add to the portal.', 0),
                     ('GBIF', 'Publish KE EMu specimen dataset to the GBIF network.', 20),
-                    ('Embargo/private datasets', 'Datasets can be marked as private or embargoed until a set date.', 0),
+                    ('Embargo/private datasets', 'Datasets can be marked as private or embargoed until a set date.', 50),
                     ('DOIs', 'Assign DataCite DOIs to all datasets.', 40),
                     ('CALMS', 'Register CALMs endpoint.', 0),
                     ('Library catalogue', 'Register library catalogue endpoint.', 0),
                     ('API documentation', 'API documentation to be made available online.', 0),
                     ('Citation metrics', 'Add citations to dataset metrics.', 0),
+                    ('Social metrics', 'Track dataset sharing metrics on social networks (Twitter, Facebook, Google+).', 0),
                     ('Specimen identifiers', 'Stable identifiers on KE EMu specimen records.', 0),
                     ('Deposition guidelines', 'Guidelines for staff as to what data should be made available.', 0),
                     ('Machine readable', 'Machine readable data & metadata (RDF/JSON-LD).', 0),

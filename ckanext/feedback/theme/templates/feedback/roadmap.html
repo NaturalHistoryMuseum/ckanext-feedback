@@ -37,6 +37,32 @@
 
                 </table>
 
+                   {% if release.issues %}
+
+                       <div class="known-issues">
+
+                           <h6>Known issues</h6>
+
+                           <p>This site is still under active development. We are aware of the following known issues which will be fixed prior to the public launch.</p>
+
+                           <ul>
+                               {% for issue in release.issues %}
+
+                                   <li>
+                                   <strong>
+                                       {{ issue[0] }}:
+                                   </strong>
+                                       {{ issue[1] }}
+                                   </li>
+
+                               {% endfor %}
+
+                           </ul>
+                       </div>
+
+                    {% endif %}
+
+
             {% endfor %}
 
             <p>Further features will be added based on staff feedback. Please <a href="{{ h.url_for('feedback_form') }}">send us your suggestions</a>.</p>

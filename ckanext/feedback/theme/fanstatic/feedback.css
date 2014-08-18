@@ -83,3 +83,12 @@ a#feedback:hover{
     height: 16px;
     background: #ADDAAB;
 }
+
+.known-issues ul li{
+    margin: 15px 200px 0 50px;
+    font-size: 0.9em;
+}
+
+.known-issues ul{
+    margin-bottom: 30px;
+}
