@@ -5,8 +5,13 @@ a#feedback{
     top: 33%;
     left: 0;
     line-height: 26px;
+    margin-top: 150px;  /* Need to offset by width for text transform */
     text-transform: uppercase;
     transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -o-transform-origin: 0 0;
