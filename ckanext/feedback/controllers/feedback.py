@@ -20,7 +20,7 @@ class FeedbackController(ContactController):
             self.context = {'model': model, 'session': model.Session, 'user': base.c.user or base.c.author, 'auth_user_obj': base.c.userobj}
             check_access('send_feedback', self.context)
         except logic.NotAuthorized:
-            base.abort(401, _('You must log into send feedback.'))
+            base.abort(401, _('You must log in to with your NHM account details to be able to send feedback.'))
 
     def form(self):
 
