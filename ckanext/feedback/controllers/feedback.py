@@ -76,6 +76,8 @@ class FeedbackController(ContactController):
                     ('Data issues', 'Mechanism to flag & resolve data issues (the data corrections should happen at source though - e.g. in KE EMu ).', 100),
                     ('Social share links', 'Users can share datasets over Twitter, Facebook and Google+', 100),
                     ('Site statistics', 'Publish site statistics, including number of datasets, contributors and records..', 100),
+                    ('Image catalogue', 'Register image library endpoint.', 100),
+                    ('Library catalogue', 'Register library catalogue endpoint.', 100),
                 ],
                 'issues': [
                     ('KE EMu images', 'KE EMu images are being delivered via the old interfaces, so some images are missing. We will switch to using MAMs when it comes online.'),
@@ -93,8 +95,6 @@ class FeedbackController(ContactController):
                     ('GBIF', 'Publish KE EMu specimen dataset to the GBIF network.', 20),
                     ('Embargo/private datasets', 'Datasets can be marked as private or embargoed until a set date.', 50),
                     ('DOIs', 'Assign DataCite DOIs to all datasets.', 40),
-                    ('CALMS', 'Register CALMs endpoint.', 0),
-                    ('Library catalogue', 'Register library catalogue endpoint.', 0),
                     ('API documentation', 'API documentation to be made available online.', 0),
                     ('Citation metrics', 'Add citations to dataset metrics.', 0),
                     ('Social metrics', 'Track dataset sharing metrics on social networks (Twitter, Facebook, Google+).', 0),
