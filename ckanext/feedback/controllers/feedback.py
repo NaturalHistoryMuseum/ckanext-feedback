@@ -81,7 +81,8 @@ class FeedbackController(ContactController):
                 ],
                 'issues': [
                     ('KE EMu images', 'KE EMu images are being delivered via the old interfaces, so some images are missing. We will switch to using MAMs when it comes online.'),
-                    ('DOIs', 'Dataset DOIs are currently just placeholders. The Museum needs to sign up for the British Library\'s DataCite service so we can start minting permanent DOIs.')
+                    ('DOIs', 'Dataset DOIs are currently just placeholders. The Museum needs to sign up for the British Library\'s DataCite service so we can start minting permanent DOIs.'),
+                    ('Draft copy', 'The copy for the About pages is still being written.')
                 ]
 
             },
