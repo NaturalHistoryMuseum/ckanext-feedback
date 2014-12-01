@@ -1,0 +1,58 @@
+div#feedback-bar{
+    display: none;  /* Hidden by default */
+    background: #228900;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999999;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+
+div#feedback-bar div{
+    /*display: table-cell;*/
+}
+
+div#feedback-bar a{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+div#feedback-bar a.feedback-close:hover{
+    text-decoration: none;
+    color: #195D0D;
+}
+
+div#feedback-bar a.feedback-close i{
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 40px;
+    position: relative;
+    top: 2px;
+}
+
+div#feedback-bar p,
+div#feedback-bar a{
+    margin-top: 2px;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+div#feedback-bar .span1{
+    text-align: right;
+}
+
+div#feedback-bar p a{
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  background: #195D0D;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+div#feedback-bar p a:hover{
+    text-decoration: underline;
+}

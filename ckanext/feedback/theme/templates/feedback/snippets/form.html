@@ -1,8 +1,0 @@
-{% extends "contact/snippets/form.html" %}
-
-{% block contact_form_fields %}
-    {{ form.markdown('content', label=_('Your feedback'), id='field-content', value=data.content, error=errors.content, placeholder=_('What can we do to improve the portal? What datasets do you have to put on the portal?'), is_required=true) }}
-    {{ form.hidden('name', value=data.name) }}
-    {{ form.hidden('email', value=data.email) }}
-{% endblock %}
-

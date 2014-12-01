@@ -1,7 +1,9 @@
 {% ckan_extends %}
 
-  {% block skip %}
-    {% resource 'feedback/feedback.css' %}
-    <a id="feedback" href="{{ h.url_for('feedback_form') }}">Staff feedback</a>
+{% block footer %}
     {{ super() }}
-  {% endblock %}
+    {% include "feedback/bar.html" %}
+{% endblock %}
+
+
+
