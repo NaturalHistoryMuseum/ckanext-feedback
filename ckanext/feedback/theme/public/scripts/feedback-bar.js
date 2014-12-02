@@ -27,7 +27,7 @@ this.ckan.module('feedback-bar', function ($, _) {
         _close: function(e) {
             e.preventDefault();
             self.el.hide();
-            $.cookie('feedback-bar-hidden', true);
+            $.cookie('feedback-bar-hidden', true, {path: '/'});
         }
 
     }

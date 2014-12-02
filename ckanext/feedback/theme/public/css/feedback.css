@@ -26,8 +26,8 @@ div#feedback-bar a.feedback-close:hover{
 }
 
 div#feedback-bar a.feedback-close i{
-    font-size: 27px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: lighter;
     line-height: 40px;
     position: relative;
     top: 2px;
