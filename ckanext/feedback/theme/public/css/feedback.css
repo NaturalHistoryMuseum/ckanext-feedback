@@ -1,58 +1,108 @@
 div#feedback-bar{
-    display: none;  /* Hidden by default */
-    background: #228900;
-    color: #fff;
+    background: #0E6C01;
     position: fixed;
-    bottom: 0px;
-    width: 100%;
-    z-index: 9999999;
-    /*display: table-cell;*/
-    /*vertical-align: middle;*/
-}
-
-div#feedback-bar div{
-    /*display: table-cell;*/
-}
-
-div#feedback-bar a{
-    cursor: pointer;
+    top: 50%;
+    left: -200px;
+    margin-top: -100px;
     color: #fff;
-    text-decoration: none;
 }
 
-div#feedback-bar a.feedback-close:hover{
-    text-decoration: none;
-    color: #195D0D;
-}
-
-div#feedback-bar a.feedback-close i{
-    font-size: 22px;
-    font-weight: lighter;
-    line-height: 40px;
-    position: relative;
-    top: 2px;
-}
-
-div#feedback-bar p,
 div#feedback-bar a{
-    margin-top: 2px;
-    margin-bottom: 0;
-    line-height: 40px;
+    color: #fff;
 }
 
-div#feedback-bar .span1{
-    text-align: right;
-}
-
-div#feedback-bar p a{
-  margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: transparent;
-  background: #195D0D;
-  background: rgba(0, 0, 0, 0.2) !important;
-}
-
-div#feedback-bar p a:hover{
+div#feedback-bar a:hover{
     text-decoration: underline;
+    color: #F8F8F8;
 }
+
+/* Layout */
+
+div#feedback-bar{
+    display: table;
+}
+
+div#feedback-bar div.left,
+div#feedback-bar div.right{
+    display: table-cell;
+}
+
+div#feedback-bar div.left{
+    width: 200px;
+}
+
+div#feedback-bar div.right{
+    width: 20px;
+    background: #105700;
+    text-align: right;
+    padding-left: 10px;
+}
+
+div#feedback-bar div.right i{
+    font-size: 24px;
+    position: relative;
+    right: 7px;
+    top: 5px;
+}
+
+div#feedback-bar div.right a{
+   	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+    display: block;
+    font-size: 24px;
+    width: 30px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+div#feedback-bar div.left div{
+    padding: 30px 20px 10px 20px;
+}
+
+div#feedback-bar div.left p{
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+div#feedback-bar div.left p a{
+    display: block;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+div#feedback-bar div.span-right{
+    text-align: right;
+    height: 100%;
+}
+
+div#feedback-bar div.span-right i{
+    font-size: 20px;
+}
+
+div.feedback-bar-inner{
+    position: relative;
+}
+
+div#feedback-bar-close{
+    color: #000;
+    position: absolute;
+    right: -14px;
+    top: -13px;
+    background: rgba(242, 242, 242, 0.8);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+div#feedback-bar-close i{
+    font-size: 30px;
+    padding: 0;
+    color: #0A2800;
+}
+
+
