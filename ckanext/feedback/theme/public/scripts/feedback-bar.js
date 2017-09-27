@@ -3,7 +3,7 @@
  */
 this.ckan.module('feedback-bar', function ($, _) {
     var self;
-    var cookieName = 'feedback-bar-collapsed-dep';
+    var cookieName = 'feedback-bar-collapse';
     return {
 
         /* Initialises the module setting up elements and event listeners.
