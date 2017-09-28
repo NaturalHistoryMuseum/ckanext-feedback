@@ -3,7 +3,7 @@
  */
 this.ckan.module('feedback-bar', function ($, _) {
     var self;
-    var cookieName = 'feedback-bar-collapsed-dev5';
+    var cookieName = 'feedback-bar-collapse';
     return {
 
         /* Initialises the module setting up elements and event listeners.
@@ -20,7 +20,7 @@ this.ckan.module('feedback-bar', function ($, _) {
             }
 
             // Set the cookie after showing once, so we don't irritate people too much
-            self.setCookie();
+            // self.setCookie();
 
             $('div#feedback-bar-close', self.el).click(self.close)
 
@@ -30,6 +30,7 @@ this.ckan.module('feedback-bar', function ($, _) {
             e.preventDefault();
             self.hide();
             $('div#feedback-bar-close', self.el).hide();
+            self.setCookie();
         },
 
         setCookie: function (e) {
