@@ -1,15 +1,15 @@
-
-#!/usr/bin/env python
+# !/usr/bin/env python
 # encoding: utf-8
 #
 # This file is part of ckanext-feedback
 # Created by the Natural History Museum in London, UK
 
-import ckan.plugins as p
+from ckan.plugins import SingletonPlugin, implements, interfaces, toolkit
 
-class FeedbackPlugin(p.SingletonPlugin):
+
+class FeedbackPlugin(SingletonPlugin):
     '''CKAN Contact Extension'''
-    p.implements(p.IConfigurer)
+    implements(interfaces.IConfigurer)
 
     ## IConfigurer
     def update_config(self, config):
@@ -18,5 +18,5 @@ class FeedbackPlugin(p.SingletonPlugin):
         :param config: 
 
         '''
-        p.toolkit.add_template_directory(config, u'theme/templates')
-        p.toolkit.add_resource(u'theme/public', u'ckanext-feedback')
+        toolkit.add_template_directory(config, u'theme/templates')
+        toolkit.add_resource(u'theme/public', u'ckanext-feedback')
